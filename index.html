@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>La Victoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="brand">🎰 LA VICTORIA</div><button id="support">Soporte</button></header>
+  <main>
+    <section class="hero">
+      <span class="tag">ENTRETENIMIENTO FAMILIAR</span>
+      <h1>Bienvenidos a <b>La Victoria</b></h1>
+      <p>Una plataforma privada de juegos sociales para compartir en familia.</p>
+      <div class="actions"><button onclick="showGames()">Ver juegos</button><button class="secondary" onclick="openRules()">Cómo funciona</button></div>
+    </section>
+    <section id="games">
+      <h2>Juegos</h2>
+      <div class="grid">
+        <article><div class="icon">🃏</div><h3>Joker Fiesta</h3><p>Tragamonedas demo con estética original.</p><button onclick="demo('Joker Fiesta')">Jugar demo</button></article>
+        <article><div class="icon">🐭</div><h3>Ratón de la Fortuna</h3><p>Juego demo familiar inspirado en la suerte.</p><button onclick="demo('Ratón de la Fortuna')">Jugar demo</button></article>
+        <article><div class="icon">⚡</div><h3>Reino del Trueno</h3><p>Una aventura demo de temática mitológica.</p><button onclick="demo('Reino del Trueno')">Jugar demo</button></article>
+      </div>
+    </section>
+    <section class="notice"><h2>Fichas familiares</h2><p>Las fichas de esta demo son puntos virtuales sin valor monetario y no permiten depósitos ni retiros.</p></section>
+  </main>
+  <dialog id="modal"><h2 id="modalTitle"></h2><p id="modalText"></p><button onclick="modal.close()">Cerrar</button></dialog>
+  <footer>La Victoria · Demo privada de entretenimiento</footer>
+  <script src="app.js"></script>
+</body>
+</html>
